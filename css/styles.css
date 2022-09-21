@@ -406,8 +406,8 @@ img {
     margin-right: 10px;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-list:hover,
+.social-list:focus {
     background-color: var(--accent-text);
     border-radius: 50%;
 }
@@ -434,12 +434,12 @@ img {
 /* style clients */
 .client-list {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
 }
 
 .client-item {
     flex-basis: calc(100% / 6 - 30px);
+}
+.client-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -449,7 +449,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 16px 32px;
+    box-sizing: border-box;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 
