@@ -320,8 +320,7 @@ img {
     height: 70px;
 }
 
-.item-icon:hover,
-.item-icon:focus {
+.work-icon:hover svg {
     fill: var(--accent-text);
 }
 
